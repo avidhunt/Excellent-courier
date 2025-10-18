@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Delivery | Excellent Courier</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="js/booking.js" defer></script>
+</head>
+<body class="bg-black text-white p-6">
+  <h1 class="text-3xl font-bold text-yellow-500 mb-6">Book a Delivery</h1>
+
+  <form id="bookingForm" class="space-y-4 max-w-lg">
+    <input type="text" id="sender" placeholder="Sender Name" class="w-full p-2 rounded text-black" required>
+    <input type="text" id="receiver" placeholder="Receiver Name" class="w-full p-2 rounded text-black" required>
+    <input type="text" id="address" placeholder="Delivery Address" class="w-full p-2 rounded text-black" required>
+    <input type="text" id="package" placeholder="Package Description" class="w-full p-2 rounded text-black" required>
+    <button type="submit" class="bg-yellow-500 text-black px-6 py-2 rounded hover:bg-yellow-400">Book Now</button>
+  </form>
+
+  <div id="confirmation" class="mt-6 hidden">
+    <p class="text-lg">Your booking was successful!</p>
+    <p class="text-yellow-400">Tracking Number: <span id="trackingNumber"></span></p>
+  </div>
+</body>
+</html>
